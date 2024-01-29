@@ -1,0 +1,113 @@
+/* img{
+    height: 400px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav */
+.navbar{
+    background-color: #161A30;
+    color: #F0ECE5;
+}
+.branding{
+    text-decoration: none;
+    color: #F0ECE5;
+}
+li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.active{
+    border: 1px solid #31304D;
+    border-radius: 10px;
+}
+ul li a:hover{
+    border: 1px solid #F0ECE5;
+    border-radius: 50px;
+}
+#navbarSupportedContent a{
+    color: #F0ECE5;
+}
+.branding img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.weather{
+    background-image: url(../images/pngtree-dark-lightning-storm-wallpaper-image_429502.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#search{
+    background: #161A30;
+    color: white;
+    line-height: normal;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    outline: none;
+    border:2px solid #F0ECE5;
+    
+}
+#search::placeholder{
+color: #F0ECE5;
+}
+#toDay{
+    background-color: #161A30;
+    
+}
+#toDay p,
+#toDay span{
+    color: #F0ECE5;
+}
+#toDayLoctaion{
+    font-size: 60px;
+}
+.temp{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.currentDayInfoo .col-md-4{
+    background-color: #F0ECE5;
+    color: #31304D;
+}
+#aboutDay{
+    color: #F0ECE5;
+    text-transform: capitalize;
+
+}
+#toDayInfo{
+    background-color: #31304D;
+}
+
+
+/*  /////////////////////////////         nextDay               ///////////// */
+.nextDayBox{
+    background-color: #161A30;
+    color: #F0ECE5;
+    overflow: hidden;
+}
+.NDName{
+    background-color: #31304D;
+    color: #F0ECE5;
+}
+
+
+/* fooooooter */
+footer{
+    background-color: #161A30;
+}
+.subscribe{
+    background-color: #F0ECE5;
+    color: #161A30;
+    font-size: 20px;
+
+}
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- <div class="container py-5 ">
+        <select class="form-select mb-5">
+            <option value="carrot">carrot</option>
+            <option value="fish">fish</option>
+            <option value="donuts">donuts</option>
+            <option value="ice cream">ice cream</option>
+            <option value="beef">beef</option>
+            <option value="chicken">chicken</option>
+            <option value="salad">salad</option>
+            <option value="pasta">pasta</option>
+
+
+           
+
+        </select>
+      <div class="row gy-5" id="data">
+        
+      </div>
+    </div> -->
+    <nav id="navbar" class="navbar navbar-expand-lg   navbar-dark ">
+        <div class="container">
+            <a class="branding d-flex " href="/">
+                <img src="./images/images.jpeg" alt="" class="logo">
+                <div class="logo-type">
+                    <h1 class="site-title">Weather</h1>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ">
+                <a class="nav-link text-white active" aria-current="page" href="#toDay">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-2" href="#">NewsLiveCameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="weather" >
+        <div class="container py-3">
+            <input id="search" type="text" class="w-100 form-control mx-auto px-4 rounded-5 py-3 text-white mb-5"
+                placeholder="find your loctaion...">
+
+            <div class="row">
+                <!-- toDaysection -->
+                <div class="col-md-12 mb-5">
+                    <div class="d-flex justify-content-center p-3 text-light " id="toDay">
+                        <!-- <p id="toDayName">sunday</p>
+                    <span>
+                        <span id="toDayNum">30</span><br>
+                        <span id="toDayMonth">junuary</span>
+                    </span> -->
+                        <h1 id="aboutDay">current day</h1>
+                    </div>
+                    <div id="toDayInfo" class="p-3 ">
+                        <div class="d-flex justify-content-around p-3 text-light w-100 " id="toDay">
+                            <p id="toDayName" class="fs-2">sunday</p>
+                            <span class="py-1">
+                                <span id="toDayNum" class="fs-3 me-3">30</span>
+                                <span id="toDayMonth" class="fs-3">junuary</span>
+                            </span>
+                        </div>
+                        <div class="row p-3 currentDayInfoo">
+                            <div
+                                class="col-md-4  d-flex flex-column justify-content-center align-items-center p-3">
+                                <p id="toDayLoctaion">cairo</p>
+                                <p id="toDayCountry" class="fs-1 fw-bolder">egypt</p>
+                                
+                               
+                            </div>
+                            <div
+                                class="col-md-4  d-flex flex-column justify-content-center align-items-center p-3">
+                                <!-- <h3 class="bg-info mb-2">Weathe Condition</h3> -->
+                                <img id="toDayConImg" src="./images/day/113.png" alt="">
+                                <span class="temp">
+                                    <span id="temp">14</span>
+                                    <span><sup>o</sup> c</span>
+                                </span>
+                                <p id="toDayConTxt" class="fs-1 "> sunny</p>
+
+                            </div>
+                            <div
+                                class="col-md-4  d-flex flex-column justify-content-center align-items-center p-3">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fa-solid fa-umbrella fs-4 me-2 mt-2"></i>
+                                    <p id="humidity" class="fs-4">20%</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <i class="fa-solid fa-wind fs-4 me-2 mt-2"></i>
+                                    <p id="wind" class="fs-4">18 km\h</p>
+                                </div>
+                                <div class="d-flex justify-content-center ">
+                                    <i class="fa-solid fa-compass fs-4 me-2 mt-2"></i>
+                                    <p id="compass" class="fs-4">East</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- tomorrow section -->
+                <div class="col-md-5 rounded-5 nextDayBox ">
+                    <div class="py-2 NDName rounded-5 d-flex justify-content-around mt-3 text-center ">
+                        <!-- <h1 id="nextDay">nextDay</h1> -->
+                        <p id="nextDay" class="fs-2">sunday</p>
+                        <span class="py-1">
+                            <span id="nextDayNum" class="fs-3 me-3">30</span>
+                            <span id="nextDayMonth" class="fs-3">junuary</span>
+                        </span>
+                    </div>
+                    <div id="tomorrow" class="p-3 text-center pt-5">
+                        <img id="nextConImg" src="./images/night/116.png" alt="">
+                        <h3>
+                            <span id="nextMaxTemp">20</span>
+                            <span><sup>o</sup>C</span>
+                        </h3>
+                        <h5>
+                            <span id="nextMinTemp">20</span>
+                            <span><sup>o</sup>C</span>
+                        </h5>
+                        <p id="nextConText" class="fs-4">could</p>
+
+                    </div>
+
+                </div>
+                <!-- after tomorrow section -->
+                <div class="col-md-5 offset-2 rounded-5 nextDayBox ">
+                    <div class="py-2 NDName rounded-5 mt-3 text-center d-flex justify-content-around ">
+                        <!-- <h1 id="ANDayName">after next Day</h1> -->
+                        <p id="ANDayName" class="fs-2">sunday</p>
+                            <span class="py-1">
+                                <span id="ANDayNum" class="fs-3 me-3">30</span>
+                                <span id="ANDayMonth" class="fs-3">junuary</span>
+                            </span>
+                    </div>
+                    <div id="tomorrow" class="p-3 text-center pt-5">
+                        <img id="ANConImg" src="./images/day/122.png" alt="">
+                        <h3>
+                            <span id="ANMaxTemp">20</span>
+                            <span><sup>o</sup>C</span>
+                        </h3>
+                        <h5>
+                            <span id="ANMinTemp">20</span>
+                            <span><sup>o</sup>C</span>
+                        </h5>
+                        <p id="ANConText" class="fs-4">could</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="p-5 ">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-8 ">
+                   <div class="d-flex w-100 mb-5">
+                    <input type="text" class="subscribe w-100 py-3 px-4 rounded-5" placeholder="Enter youe email to subscribe">
+                   <button class="btn btn-dark rounded-5 px-4 ms-2">subscribe</button>
+                   </div>
+                   <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-3 offset-1">
+                    <div class="social-links">
+                        <a class="me-2" href="#"><i class="fa-brands fa-facebook fs-2"></i></a>
+                        <a class="me-2" href="#"><i class="fa-brands fa-twitter fs-2"></i></a>
+                        <a class="me-2" href="#"><i class="fa-brands fa-google-plus fs-2"></i></a>
+                        <a class="me-2" href="#"><i class="fa-brands fa-linkedin fs-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
